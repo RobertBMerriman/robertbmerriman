@@ -1,0 +1,19 @@
+.App {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  margin: 0 10px;
+  color: #60c4c3;
+  filter: brightness(0.9);
+}
+
+.me {
+  display: block;
+  border-radius: 50%;
+  width: 60%;
+  box-shadow: 0 0 8px 3px #60c4c3;
+}

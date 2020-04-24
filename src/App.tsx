@@ -1,34 +1,37 @@
 import React from "react";
-import "./App.css";
+import "./App.scss";
 import Sakura from "./sakura";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
+import { Card } from "./components/Card";
+import { Row } from "./components/Row";
+import { Col } from "./components/Col";
+import { VerticalDivider } from "./components/VerticalDivider";
 
 //leaf colour = #60c4c3
 
 const App = () => {
   return (
     <div className="App">
-      <Sakura leaves={30} />
-      <Sakura leaves={10} zIndex={10} />
-      <div className="card">
-        <div className="col center">
+      <Sakura leaves={6} />
+      <Sakura leaves={2} zIndex={10} />
+      <Card>
+        <Col center>
           <img src="img/robert.merriman.jpg" alt="It's-a me!" className="me" />
-          <h2>Front endgineer</h2>
-          <p>lorem ispem</p>
-        </div>
-        <div className="vr" />
-        <div className="col">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia deserunt officia quasi vel.
-            Accusantium libero tenetur.
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem voluptates quas facere! Magni quis in
-            assumenda eius facilis! Omnis velit consectetur culpa sequi commodi modi?
-          </p>
-          <p>Lorem ipsum, dolor sit amet</p>
-        </div>
-      </div>
+          <h1>Robert Merriman</h1>
+          <p>Front endgineer</p>
+          <Row>
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+            <FontAwesomeIcon icon={faFileAlt} size="2x" />
+          </Row>
+        </Col>
+        <VerticalDivider />
+        <Col>
+          <p>Hey wuddup my name is Robert and I'm a front-end developer in the UK</p>
+          <p>I've worked with a variety of front-end and back-end languages mostly thanks</p>
+        </Col>
+      </Card>
     </div>
   );
 };

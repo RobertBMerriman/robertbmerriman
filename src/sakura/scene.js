@@ -6,9 +6,9 @@ export const LeafScene = function (el, numLeaves = 40) {
   this.options = {
     numLeaves: numLeaves,
     wind: {
-      magnitude: 1.2,
+      magnitude: 100,
       maxSpeed: 8,
-      duration: 300,
+      duration: 100,
       start: 0,
       speed: 0,
     },

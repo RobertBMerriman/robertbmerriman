@@ -7,7 +7,7 @@ interface Props {
   zIndex?: number;
 }
 
-const Sakura = ({ leaves = 40, zIndex = -10 }: Props) => {
+const Sakura = ({ leaves = 40, zIndex }: Props) => {
   const className = "sakura";
   const uid = `${performance.now()}`;
   const id = `${className}-${uid.replace(".", "")}`;
