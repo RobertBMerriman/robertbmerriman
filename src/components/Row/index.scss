@@ -1,3 +1,13 @@
 .row {
   display: flex;
 }
+
+.row.break {
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.row.center {
+  justify-content: center;
+}

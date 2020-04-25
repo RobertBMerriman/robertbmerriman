@@ -1,10 +1,8 @@
 import React from "react";
 import "./App.scss";
-import Sakura from "./sakura";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt } from "@fortawesome/free-regular-svg-icons";
-import { Card } from "./components/Card";
 import { Row } from "./components/Row";
 import { Col } from "./components/Col";
 import { VerticalDivider } from "./components/VerticalDivider";
@@ -14,24 +12,33 @@ import { VerticalDivider } from "./components/VerticalDivider";
 const App = () => {
   return (
     <div className="App">
-      <Sakura leaves={6} />
-      <Sakura leaves={2} zIndex={10} />
-      <Card>
-        <Col center>
-          <img src="img/robert.merriman.jpg" alt="It's-a me!" className="me" />
-          <h1>Robert Merriman</h1>
-          <p>Front endgineer</p>
-          <Row>
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-            <FontAwesomeIcon icon={faFileAlt} size="2x" />
-          </Row>
+      <Row break>
+        <Col right>
+          <Col center>
+            <img src={`${window.location.origin}/img/robert.merriman.jpg`} alt="It's-a me!" className="me" />
+            <h1>Robert Merriman</h1>
+            <p>Front endgineer</p>
+            <Row>
+              <a target="_blank" href="https://github.com/RobertBMerriman" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+              <FontAwesomeIcon icon={faFileAlt} size="2x" />
+            </Row>
+          </Col>
         </Col>
         <VerticalDivider />
-        <Col>
-          <p>Hey wuddup my name is Robert and I'm a front-end developer in the UK</p>
-          <p>I've worked with a variety of front-end and back-end languages mostly thanks</p>
+        <Col grow={2}>
+          <div style={{ marginRight: "20%" }}>
+            <p>Hey wuddup my name is Robert and I'm a front-end developer in the UK</p>
+            <p>
+              I've worked with a variety of front-end and back-end languages mostly thanks to my apprenticeship at
+              Sainsbury's where I worked on all kinds of teams and projects
+            </p>
+            <p>JavaScript, TypeScipt, React</p>
+            <p>Wowee some other stuff</p>
+          </div>
         </Col>
-      </Card>
+      </Row>
     </div>
   );
 };
