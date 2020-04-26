@@ -24,11 +24,11 @@
   left: 0;
   width: 20px;
   height: 20px;
-  background: url(http://www.clker.com/cliparts/u/m/q/p/x/l/sakura-petal-3-pink-hi.png) no-repeat;
+  background: url(./sakura-petal-blue.png) no-repeat;
   background-size: 100%;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
-  filter: hue-rotate(180deg);
+  /* filter: hue-rotate(180deg); */
 }

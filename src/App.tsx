@@ -12,33 +12,38 @@ import { VerticalDivider } from "./components/VerticalDivider";
 const App = () => {
   return (
     <div className="App">
-      <Row break>
-        <Col right>
-          <Col center>
-            <img src={`${window.location.origin}/img/robert.merriman.jpg`} alt="It's-a me!" className="me" />
-            <h1>Robert Merriman</h1>
-            <p>Front endgineer</p>
-            <Row>
-              <a target="_blank" href="https://github.com/RobertBMerriman" rel="noopener noreferrer">
-                <FontAwesomeIcon icon={faGithub} size="2x" />
-              </a>
-              <FontAwesomeIcon icon={faFileAlt} size="2x" />
-            </Row>
+      <div style={{ maxWidth: "70%" }}>
+        <Row break>
+          <Col right>
+            <Col center>
+              {/* Use srcSet with different res */}
+              <img src={`/img/robert.merriman.jpg`} alt="It's-a me!" className="me" />
+              <h1>Robert Merriman</h1>
+              <p>Front endgineer</p>
+              <Row>
+                <div style={{ marginTop: 8 }}>
+                  <a target="_blank" href="https://github.com/RobertBMerriman" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faGithub} size="2x" />
+                  </a>
+                  <FontAwesomeIcon icon={faFileAlt} size="2x" />
+                </div>
+              </Row>
+            </Col>
           </Col>
-        </Col>
-        <VerticalDivider />
-        <Col grow={2}>
-          <div style={{ marginRight: "20%" }}>
-            <p>Hey wuddup my name is Robert and I'm a front-end developer in the UK</p>
-            <p>
-              I've worked with a variety of front-end and back-end languages mostly thanks to my apprenticeship at
-              Sainsbury's where I worked on all kinds of teams and projects
-            </p>
-            <p>JavaScript, TypeScipt, React</p>
-            <p>Wowee some other stuff</p>
-          </div>
-        </Col>
-      </Row>
+          <VerticalDivider />
+          <Col grow={2}>
+            <div>
+              <p>Hey wuddup my name is Robert and I'm a front-end developer in the UK</p>
+              <p>
+                I've worked with a variety of front-end and back-end languages mostly thanks to my apprenticeship at
+                Sainsbury's where I worked on all kinds of teams and projects
+              </p>
+              <p>JavaScript, TypeScipt, React</p>
+              <p>Wowee some other stuff</p>
+            </div>
+          </Col>
+        </Row>
+      </div>
     </div>
   );
 };

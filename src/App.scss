@@ -1,3 +1,5 @@
+$leafColour: #87c0d2;
+
 .App {
   height: 100%;
   display: flex;
@@ -9,9 +11,9 @@
 
 svg {
   margin: 0 10px;
-  color: #60c4c3;
+  color: #87c0d2;
 
-  filter: brightness(0.9);
+  filter: brightness(0.95);
 
   &:hover {
     filter: brightness(1);
@@ -21,6 +23,6 @@ svg {
 .me {
   display: block;
   border-radius: 50%;
-  max-width: 180px;
-  box-shadow: 0 0 8px 3px #60c4c3;
+  max-width: 160px;
+  box-shadow: 0 0 8px 3px #87c0d2;
 }
