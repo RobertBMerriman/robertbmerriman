@@ -1,0 +1,16 @@
+.t-shirt {
+    background: #2b2b2b;
+    color: #eeeeee;
+}
+
+.selector {
+    color: #dcc457;
+}
+
+.attribute {
+    margin-left: 2em;
+}
+
+.literal {
+    color: #5394ec;
+}
