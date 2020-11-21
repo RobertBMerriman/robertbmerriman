@@ -40,6 +40,7 @@ const App = () => {
               </p>
               <p>JavaScript, TypeScipt, React</p>
               <p>Wowee some other stuff</p>
+              <p>Extra extra read all about it. I'm making this site again</p>
             </div>
           </Col>
         </Row>
