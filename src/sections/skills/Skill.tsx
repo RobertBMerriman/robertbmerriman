@@ -1,9 +1,9 @@
 import React from "react";
 import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Row } from "../../components/Row";
-import { Col } from "../../components/Col";
-import { VerticalDivider } from "../../components/VerticalDivider";
+import { Row } from "components/Row";
+import { Col } from "components/Col";
+import { VerticalDivider } from "components/VerticalDivider";
 
 interface Props {
   icon: IconDefinition
@@ -11,7 +11,7 @@ interface Props {
   description: React.ReactNode
 }
 
-const ratingBlock = { width: 10, height: 'auto', margin: '5px 1px' }
+const ratingBlock: React.CSSProperties = { width: 10, height: 'auto', margin: '5px 1px', boxSizing: 'border-box', borderRadius: 3 }
 
 export const Skill = ({ icon, rating, description }: Props) =>
   <Row>
@@ -19,8 +19,8 @@ export const Skill = ({ icon, rating, description }: Props) =>
       <Col center>
         <Row>
           <FontAwesomeIcon icon={icon} size="4x" />
-          {Array(rating).fill(0).map(() => <div style={{ ...ratingBlock, background: '#87c0d2', boxSizing: 'border-box' }} />)}
-          {Array(10 - rating).fill(0).map(() => <div style={{ ...ratingBlock, border: '2px #87c0d2 solid', boxSizing: 'border-box' }} />)}
+          {Array(rating).fill(0).map(() => <div style={{ ...ratingBlock, background: '#87c0d2' }} />)}
+          {Array(10 - rating).fill(0).map(() => <div style={{ ...ratingBlock, border: '2px #87c0d2 solid' }} />)}
         </Row>
       </Col>
     </Col>

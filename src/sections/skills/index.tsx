@@ -1,5 +1,5 @@
 import React from 'react'
-import { Section } from "../../components/Section";
+import { Section } from "components/Section";
 import { faJava, faJsSquare } from "@fortawesome/free-brands-svg-icons";
 import { Skill } from "./Skill";
 

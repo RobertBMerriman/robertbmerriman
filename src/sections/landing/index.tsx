@@ -2,10 +2,10 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileAlt } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
-import { Col } from '../../components/Col';
-import { Row } from '../../components/Row';
-import { Section } from "../../components/Section";
-import { VerticalDivider } from '../../components/VerticalDivider';
+import { Col } from 'components/Col';
+import { Row } from 'components/Row';
+import { Section } from "components/Section";
+import { VerticalDivider } from 'components/VerticalDivider';
 
 
 export const LandingSection = () =>
