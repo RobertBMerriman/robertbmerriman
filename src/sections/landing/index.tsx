@@ -11,8 +11,8 @@ import { VerticalDivider } from 'components/VerticalDivider';
 export const LandingSection = () =>
   <Section>
     <Row break>
-      <Col right>
-        <Col center>
+      <Col grow={1} right >
+        <Col center vCenter >
           {/* Use srcSet with different res */}
           <img src={`/img/robert.merriman.jpg`} alt="It's-a me!" className="me" />
           <h1>Robert Merriman</h1>
@@ -28,7 +28,7 @@ export const LandingSection = () =>
         </Col>
       </Col>
       <VerticalDivider />
-      <Col grow={2}>
+      <Col grow={2} vCenter>
         <div>
           <h1>THIS IS A WORK IN PROGRESS PLS NO JUDGE YOU HAVE BEEN WARNED KTHX</h1>
           <p>Hey wuddup my name is Robert and I'm a front-end developer in the UK</p>

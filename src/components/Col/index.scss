@@ -1,8 +1,7 @@
 .col {
-  flex: 1 1;
+  flex: 1 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .col p {
@@ -15,6 +14,10 @@
 
 .col.center {
   align-items: center;
+}
+
+.col.v-center {
+  justify-content: center;
 }
 
 .col.right {
