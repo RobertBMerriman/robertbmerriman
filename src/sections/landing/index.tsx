@@ -16,7 +16,7 @@ export const LandingSection = () =>
           {/* Use srcSet with different res */}
           <img src={`/img/robert.merriman.jpg`} alt="It's-a me!" className="me" />
           <h1>Robert Merriman</h1>
-          <p>Front endgineer</p>
+          <p>Full-stack Engineer</p>
           <Row>
             <div style={{ marginTop: 8 }}>
               <a target="_blank" href="https://github.com/RobertBMerriman" rel="noopener noreferrer">
@@ -35,10 +35,10 @@ export const LandingSection = () =>
           <p>
             I've worked with a variety of front-end and back-end languages mostly thanks to my apprenticeship at
             Sainsbury's where I worked on all kinds of teams and projects
-              </p>
-          <p>JavaScript, TypeScipt, React</p>
-          <p>Wowee some other stuff</p>
-          <p>Extra extra read all about it. I'm making this site again</p>
+          </p>
+          <p>I am an engaged, hard-working and determined individual who is eager to hone my craft and take up every opportunity to contribute in a team.</p>
+          <p>I am good at working independently or in a pair and I am a quick learner with a passion to further my skills and support the learning of others.</p>
+          <p>I am calm, thrive under pressure and I consider my adaptability, decision-making skills and ability to convey technical information to both technical and non-technical people to be particular personal strengths.</p>
         </div>
       </Col>
     </Row>

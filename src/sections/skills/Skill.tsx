@@ -12,17 +12,21 @@ interface Props {
   description: React.ReactNode
 }
 
-const ratingBlock: React.CSSProperties = { width: 10, height: 'auto', margin: '8px 1px', boxSizing: 'border-box', borderRadius: 3 }
+const ratingBlock: React.CSSProperties = { width: 10, height: 24, margin: '0 1px', boxSizing: 'border-box', borderRadius: 3 }
 
 export const Skill = ({ icon, name, rating, description }: Props) =>
   <Row>
     <Col right>
       <Col center>
         <Row>
-          {icon && <FontAwesomeIcon icon={icon} size="3x" />}
-          <Col center>{name.toUpperCase()}</Col>
-          {Array(rating).fill(0).map(() => <div style={{ ...ratingBlock, background: '#87c0d2' }} />)}
-          {Array(10 - rating).fill(0).map(() => <div style={{ ...ratingBlock, border: '2px #87c0d2 solid' }} />)}
+          {icon && <FontAwesomeIcon icon={icon} size="2x" />}
+          <Col center><span style={{ marginRight: 8, fontSize: '1.6em', lineHeight: 1 }}>{name}</span></Col>
+          <Col center>
+            <Row>
+              {Array(rating).fill(0).map(() => <div style={{ ...ratingBlock, background: '#87c0d2' }} />)}
+              {Array(10 - rating).fill(0).map(() => <div style={{ ...ratingBlock, border: '2px #87c0d2 solid' }} />)}
+            </Row>
+          </Col>
         </Row>
       </Col>
     </Col>
