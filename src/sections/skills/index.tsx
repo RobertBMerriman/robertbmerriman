@@ -11,6 +11,7 @@ export const SkillsSection = () =>
   <Section>
     <Row>
       <Col>
+        <h1>Experience</h1>
         <h3>Soft skills</h3>
         <p>Teaching - I have really enjoyed tutoring more junior devs and have got lots of positive feedback. ... This is something I'd like to do even more of.</p>
         <p>
@@ -82,25 +83,28 @@ export const SkillsSection = () =>
 
         Unity, C#, WebGL HTML5 Canvas
       </Col>
-      <Col right>
-        <Skill icon={faJsSquare} name="Javascript" rating={8} />
-        <Skill name="Typescript" rating={9} />
-        <Skill icon={faReact} name="React" rating={8} />
-        <Skill icon={faPython} name="Python" rating={7} />
-        <Skill name="Django" rating={4} />
-        <Skill name="Flask" rating={6} />
-        <Skill icon={faGem} name="Ruby" rating={7} />
-        <Skill name="Rails" rating={6} />
-        <Skill name="Sinatra" rating={5} />
-        <Skill icon={faAndroid} name="Android" rating={7} />
-        <Skill name="Kotlin" rating={7} />
-        <Skill name="Scala" rating={6} />
-        <Skill icon={faJava} name="Java" rating={7} />
-        <Skill icon={faApple} name="iOS" rating={8} />
-        <Skill icon={faSwift} name="Swift" rating={7} />
-        <Skill name="Go" rating={6} />
-        <Skill name="C#" rating={5} />
-        <Skill icon={faUnity} name="Unity" rating={6} />
+      <Col center>
+        <h1>Skills</h1>
+        <Col right>
+          <Skill icon={faJsSquare} name="Javascript" rating={8} />
+          <Skill name="Typescript" rating={9} />
+          <Skill icon={faReact} name="React" rating={8} />
+          <Skill icon={faPython} name="Python" rating={7} />
+          <Skill name="Django" rating={4} />
+          <Skill name="Flask" rating={6} />
+          <Skill icon={faGem} name="Ruby" rating={7} />
+          <Skill name="Rails" rating={6} />
+          <Skill name="Sinatra" rating={5} />
+          <Skill icon={faAndroid} name="Android" rating={7} />
+          <Skill name="Kotlin" rating={7} />
+          <Skill name="Scala" rating={6} />
+          <Skill icon={faJava} name="Java" rating={7} />
+          <Skill icon={faApple} name="iOS" rating={8} />
+          <Skill icon={faSwift} name="Swift" rating={7} />
+          <Skill name="Go" rating={6} />
+          <Skill name="C#" rating={5} />
+          <Skill icon={faUnity} name="Unity" rating={6} />
+        </Col>
       </Col>
     </Row>
   </Section>
