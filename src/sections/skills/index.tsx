@@ -1,10 +1,11 @@
 import React from 'react'
 import { Section } from "components/Section";
-import { faAndroid, faApple, faJava, faJsSquare, faPython, faReact, faSwift, faUnity } from "@fortawesome/free-brands-svg-icons";
+import { faAndroid, faApple, faAws, faGitAlt, faJava, faJsSquare, faPython, faReact, faSwift, faUnity } from "@fortawesome/free-brands-svg-icons";
 import { Skill } from "./Skill";
 import { faGem } from '@fortawesome/free-regular-svg-icons';
 import { Col } from 'components/Col';
 import { Row } from 'components/Row';
+import { faDatabase, faTerminal } from '@fortawesome/free-solid-svg-icons';
 
 
 export const SkillsSection = () =>
@@ -84,14 +85,14 @@ export const SkillsSection = () =>
         Unity, C#, WebGL HTML5 Canvas
       </Col>
       <Col center>
-        <h1>Skills</h1>
+        <h1>&nbsp;</h1>
         <Col right>
           <Skill icon={faJsSquare} name="Javascript" rating={8} />
           <Skill name="Typescript" rating={9} />
           <Skill icon={faReact} name="React" rating={8} />
           <Skill icon={faPython} name="Python" rating={7} />
-          <Skill name="Django" rating={4} />
           <Skill name="Flask" rating={6} />
+          <Skill name="Django" rating={4} />
           <Skill icon={faGem} name="Ruby" rating={7} />
           <Skill name="Rails" rating={6} />
           <Skill name="Sinatra" rating={5} />
@@ -103,7 +104,12 @@ export const SkillsSection = () =>
           <Skill icon={faSwift} name="Swift" rating={7} />
           <Skill name="Go" rating={6} />
           <Skill name="C#" rating={5} />
+          <Skill name="PHP" rating={4} />
           <Skill icon={faUnity} name="Unity" rating={6} />
+          <Skill icon={faGitAlt} name="Git" rating={8} />
+          <Skill icon={faTerminal} name="Unix term" rating={8} />
+          <Skill icon={faAws} name="AWS Infra" rating={5} />
+          <Skill icon={faDatabase} name="SQL" rating={5} />
         </Col>
       </Col>
     </Row>

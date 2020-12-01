@@ -1,4 +1,4 @@
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFileAlt } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
@@ -21,6 +21,9 @@ export const LandingSection = () =>
             <div style={{ marginTop: 8 }}>
               <a target="_blank" href="https://github.com/RobertBMerriman" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faGithub} size="2x" />
+              </a>
+              <a target="_blank" href="https://www.linkedin.com/in/robertbmerriman/" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
               <FontAwesomeIcon icon={faFileAlt} size="2x" />
             </div>

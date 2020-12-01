@@ -10,13 +10,17 @@ $leafColour: #87c0d2;
 // #bfdde7
 
 svg {
-  margin: 0 10px;
   color: $leafColour;
+}
 
-  filter: brightness(0.95);
+a {
+  svg {
+    margin: 0 10px;
+    filter: brightness(0.95);
 
-  &:hover {
-    filter: brightness(1);
+    &:hover {
+      filter: brightness(1);
+    }
   }
 }
 
