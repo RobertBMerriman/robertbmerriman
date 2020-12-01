@@ -10,17 +10,24 @@ interface Props {
   rating: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
 }
 
-const ratingBlock: React.CSSProperties = { width: 10, height: 24, margin: '0 1px', boxSizing: 'border-box', borderRadius: 3 }
+const ratingBlock: React.CSSProperties = { width: 8, height: 24, boxSizing: 'border-box', }
+const ratingLeft: React.CSSProperties = { marginLeft: 1, borderTopLeftRadius: 3, borderBottomLeftRadius: 3, }
+const ratingRight: React.CSSProperties = { marginRight: 1, borderTopRightRadius: 3, borderBottomRightRadius: 3, }
 
 export const Skill = ({ icon, name, rating }: Props) =>
   <Row>
-    {icon && <FontAwesomeIcon icon={icon} size="2x" />}
-    <Col center><span style={{ marginRight: 8, fontSize: '1.6em', lineHeight: 1 }}>{name}</span></Col>
-    <Col center>
+    <Col right vCenter>
+      <span style={{ fontSize: '1.6em', lineHeight: 1, whiteSpace: 'nowrap' }}>
+        {name}
+      </span>
+    </Col>
+    <div style={{ fontSize: '24px', height: '1.25em', width: '1.25em', margin: '0 2px' }}>
+      {icon && <FontAwesomeIcon icon={icon} fixedWidth />}
+    </div>
+    <Col center vCenter>
       <Row>
-        {Array(rating).fill(0).map(() => <div style={{ ...ratingBlock, background: '#87c0d2' }} />)}
-        {Array(10 - rating).fill(0).map(() => <div style={{ ...ratingBlock, border: '2px #87c0d2 solid' }} />)}
+        {Array(rating).fill(0).map((_, i) => i % 2 === 0 ? <div style={{ ...ratingBlock, ...ratingLeft, background: '#87c0d2' }} /> : <div style={{ ...ratingBlock, ...ratingRight, background: '#87c0d2' }} />)}
+        {Array(10 - rating).fill(0).map((_, i) => i % 2 === rating % 2 ? <div style={{ ...ratingBlock, ...ratingLeft, border: '2px #87c0d2 solid', borderRight: 'none' }} /> : <div style={{ ...ratingBlock, ...ratingRight, border: '2px #87c0d2 solid', borderLeft: 'none' }} />)}
       </Row>
     </Col>
-
   </Row>
