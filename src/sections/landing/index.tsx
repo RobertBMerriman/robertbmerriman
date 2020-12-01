@@ -25,7 +25,9 @@ export const LandingSection = () =>
               <a target="_blank" href="https://www.linkedin.com/in/robertbmerriman/" rel="noopener noreferrer">
                 <FontAwesomeIcon icon={faLinkedin} size="2x" />
               </a>
-              <FontAwesomeIcon icon={faFileAlt} size="2x" />
+              <a target="_blank" href="https://robertbmerriman.co.uk/" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFileAlt} size="2x" />
+              </a>
             </div>
           </Row>
         </Col>

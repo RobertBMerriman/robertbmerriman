@@ -11,8 +11,8 @@ interface Props {
 }
 
 const ratingBlock: React.CSSProperties = { width: 8, height: 24, boxSizing: 'border-box', }
-const ratingLeft: React.CSSProperties = { marginLeft: 1, borderTopLeftRadius: 3, borderBottomLeftRadius: 3, }
-const ratingRight: React.CSSProperties = { marginRight: 1, borderTopRightRadius: 3, borderBottomRightRadius: 3, }
+const ratingLeft: React.CSSProperties = { marginLeft: 1.5, borderTopLeftRadius: 5, borderBottomLeftRadius: 5, }
+const ratingRight: React.CSSProperties = { marginRight: 1.5, borderTopRightRadius: 5, borderBottomRightRadius: 5, }
 
 export const Skill = ({ icon, name, rating }: Props) =>
   <Row>
@@ -31,3 +31,6 @@ export const Skill = ({ icon, name, rating }: Props) =>
       </Row>
     </Col>
   </Row>
+
+// TODO HACK
+export const SkillSpacer = () => <Row><div style={{ fontSize: 6 }}>&nbsp;</div></Row>
