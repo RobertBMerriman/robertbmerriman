@@ -86,8 +86,8 @@ export const SkillsSection = () =>
       <Col center>
         {/* <h1>&nbsp;</h1> */}
         <Col right>
-          <Skill icon={faJsSquare} name="Javascript" rating={10} />
-          <Skill name="Typescript" rating={10} />
+          <Skill icon={faJsSquare} name="JavaScript" rating={10} />
+          <Skill name="TypeScript" rating={10} />
           <Skill icon={faReact} name="React" rating={10} />
           <SkillSpacer />
           <Skill name="Kotlin" rating={9} />
