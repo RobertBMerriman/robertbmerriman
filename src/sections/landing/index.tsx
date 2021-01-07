@@ -35,15 +35,8 @@ export const LandingSection = () =>
       <VerticalDivider />
       <Col grow={2} vCenter>
         <div>
-          <h1>THIS IS A WORK IN PROGRESS PLS NO JUDGE YOU HAVE BEEN WARNED KTHX</h1>
-          <p>Hey wuddup my name is Robert and I'm a front-end developer in the UK</p>
-          <p>
-            I've worked with a variety of front-end and back-end languages mostly thanks to my apprenticeship at
-            Sainsbury's where I worked on all kinds of teams and projects
-          </p>
-          <p>I am an engaged, hard-working and determined individual who is eager to hone my craft and take up every opportunity to contribute in a team.</p>
-          <p>I am good at working independently or in a pair and I am a quick learner with a passion to further my skills and support the learning of others.</p>
-          <p>I am calm, thrive under pressure and I consider my adaptability, decision-making skills and ability to convey technical information to both technical and non-technical people to be particular personal strengths.</p>
+          <h1 style={{ fontWeight: 'normal' }}>Hi! I am currently working very hard bringing this new-and-improved site to life. It will be a combination CV/portfolio and I'm sure you'll love it.</h1>
+          <h1 style={{ fontWeight: 'normal' }}>Please come back later when it is ready, maybe in a few weeks. Or you can see my progress on <a target="_blank" href="https://github.com/RobertBMerriman/robertbmerriman" rel="noopener noreferrer">GitHub</a> :)</h1>
         </div>
       </Col>
     </Row>
